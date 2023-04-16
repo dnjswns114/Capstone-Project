@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.Valid;
 
@@ -41,4 +42,40 @@ public class MemberController {
     public String login() {
         return "/member/loginForm";
     }
+
+    @GetMapping("/board")
+    public String board() {
+        {return "/board/board";}
+    }
+
+    @GetMapping("/accouncement")
+    public String accouncement() {
+        {return "/accouncement/accouncement";}
+    }
+
+    @GetMapping("/workoutResult")
+    public String workoutResult() {
+        {return "/workoutResult/workoutResult";}
+    }
+
+    @GetMapping("/chat")
+    public String chat() {
+        {return "/chat/chat";}
+    }
+
+    @GetMapping("/weather")
+    public String weather() {
+        {return "/weather/weather";}
+    }
+
+    @GetMapping("/calendar")
+    public String calendar() {
+        {return "/calendar/calendar";}
+    }
+
+    @GetMapping("/memo")
+    public String memo() {
+        {return "/memo/memo";}
+    }
+
 }
