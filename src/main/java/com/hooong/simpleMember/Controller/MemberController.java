@@ -78,4 +78,9 @@ public class MemberController {
         {return "/memo/memo";}
     }
 
+    @GetMapping("/main")
+    public String main() {
+        {return "/main/main";}
+    }
+
 }

@@ -1,0 +1,34 @@
+/*body{*/
+/*    background-color: white;*/
+/*}*/
+/*.OsanIcon{*/
+/*    display: inline-block;*/
+/*    font-size: 1.375rem;*/
+/*    text-align: center;*/
+/*}*/
+/*.OsanLowtemp{*/
+/*    display: inline-block;*/
+/*    font-size: 1.375rem;*/
+/*    text-align: center;*/
+/*}*/
+/*.OsanLowtemp{*/
+/*    display: inline-block;*/
+/*    font-size: 1.375rem;*/
+/*    text-align: center;*/
+/*}*/
+/*.OsanHightemp{*/
+/*    display: inline-block;*/
+/*    font-size: 1.375rem;*/
+/*    text-align: center;*/
+/*}*/
+
+body{
+    background-color: white;
+    text-align: center;
+}
+.OsanIcon, .OsanNowtemp,.OsanLowtemp,.OsanHightemp{
+    display: inline-block;
+    font-size:  1.375rem;
+    text-align: center;
+}
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My Website</title>
+    <style>
+        /* CSS styles for the navigation bar */
+        nav {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        /* CSS styles for the content */
+        main {
+            padding: 20px;
+        }
+        section {
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+    </style>
+<!--    <script>-->
+<!--        // JavaScript function to open tabs-->
+<!--        function openTab(evt, tabName) {-->
+<!--            // Declare variables-->
+<!--            var i, section, link;-->
+
+<!--            // Get all elements with class="section" and hide them-->
+<!--            section = document.getElementsByClassName("section");-->
+<!--            for (i = 0; i < section.length; i++) {-->
+<!--                section[i].style.display = "none";-->
+<!--            }-->
+
+<!--            // Get all elements with class="link" and remove the class "active"-->
+<!--            link = document.getElementsByClassName("link");-->
+<!--            for (i = 0; i < link.length; i++) {-->
+<!--                link[i].className = link[i].className.replace(" active", "");-->
+<!--            }-->
+
+<!--            // Show the current tab, and add an "active" class to the button that opened the tab-->
+<!--            document.getElementById(tabName).style.display = "block";-->
+<!--            evt.currentTarget.className += " active";-->
+<!--        }-->
+<!--    </script>-->
+</head>
+<body>
+<header>
+    <a th:href="@{/main}">
+        <img src="img/mainlogo.png" width="200", height ="100">
+    </a>
+    <h1>나만의 건강 비서 웹서비스</h1>
+    <nav>
+        <ul>
+            <li><a th:href="@{/weather}">날씨</a></li>
+            <li><a th:href="@{/calendar}">스케줄</a></li>
+            <li><a th:href="@{/memo}">메모</a></li>
+            <li><a th:href="@{/accouncement}">공지사항</a></li>
+            <li><a th:href="@{/board}">자유게시판</a></li>
+            <li><a th:href="@{/workoutResult}">운동성과</a></li>
+            <li><a th:href="@{/chat}">채팅룸</a></li>
+        </ul>
+        <!-- add logo or other header content here -->
+    </nav>
+</header>
+</body>
+</html>

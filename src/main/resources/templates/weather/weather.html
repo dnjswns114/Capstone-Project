@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <!--제이쿼리-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://kit.fontawesome.com/6b317e45c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/weather.css">
 </head>
 <body>
-<h1>날씨페이지</h1>
+    <span class="nowtime"></span>
+    <span>현재날씨</span>
+
+    <h3>오산시</h3>
+    <h3 class="OsanIcon"></h3>
+    <h3 class="OsanNowtemp">현재기온:</h3>
+    <h3 class="OsanLowtemp">최저기온:</h3>
+    <h3 class="OsanHightemp">최대기온:</h3>
+    <script src="/js/weather.js"></script>
+
+
+
 </body>
 </html>

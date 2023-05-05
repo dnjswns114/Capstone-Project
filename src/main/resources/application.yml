@@ -5,6 +5,14 @@ spring:
     password: 1234
     driver-class-name: org.mariadb.jdbc.Driver
 
+  thymeleaf:
+    cache: false
+    check-template-location: true
+    prefix: classpath:/templates/
+    suffix: .html
+
+
+
   jpa:
     hibernate:
       ddl-auto: create
@@ -16,3 +24,7 @@ logging:
   level:
     org.hibernate.SQL: debug
     org.hibernate.type: trace
+
+
+
+
