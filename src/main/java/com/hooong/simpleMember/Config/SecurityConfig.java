@@ -1,5 +1,6 @@
 package com.hooong.simpleMember.Config;
 
+import com.fasterxml.jackson.core.JsonGenerator;
 import com.hooong.simpleMember.Service.MemberService;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -33,6 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+        http.csrf().disable(); //이거 작성하면 403에러 막아줌
         http.authorizeRequests()
                 .antMatchers("/**").permitAll()
                 .and()
@@ -48,6 +50,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
             .exceptionHandling();
     }
+
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {

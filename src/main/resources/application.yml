@@ -11,6 +11,13 @@ spring:
     prefix: classpath:/templates/
     suffix: .html
 
+    mvc:
+      view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+
+
 
 
   jpa:
@@ -24,6 +31,7 @@ logging:
   level:
     org.hibernate.SQL: debug
     org.hibernate.type: trace
+
 
 
 

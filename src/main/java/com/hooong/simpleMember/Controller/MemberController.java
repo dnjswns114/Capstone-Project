@@ -1,18 +1,12 @@
 package com.hooong.simpleMember.Controller;
 
-import com.hooong.simpleMember.Domain.Member;
 import com.hooong.simpleMember.Dto.MemberDto;
 import com.hooong.simpleMember.Service.MemberService;
 import lombok.AllArgsConstructor;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import javax.validation.Valid;
 
 @Controller
 @AllArgsConstructor
@@ -43,10 +37,10 @@ public class MemberController {
         return "/member/loginForm";
     }
 
-    @GetMapping("/board")
-    public String board() {
-        {return "/board/board";}
-    }
+//    @GetMapping("/board")
+//    public String board() {
+//        {return "/board/board";}
+//    }
 
     @GetMapping("/accouncement")
     public String accouncement() {
