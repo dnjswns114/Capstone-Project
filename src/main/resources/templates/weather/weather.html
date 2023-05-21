@@ -6,18 +6,94 @@
     <!--제이쿼리-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://kit.fontawesome.com/6b317e45c1.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
     <link rel="stylesheet" href="/css/weather.css">
+
 </head>
 <body>
-    <span class="nowtime"></span>
-    <span>현재날씨</span>
+<!--    <span class="nowtime"></span>-->
+<!--    <span>현재날씨</span>-->
 
-    <h3>오산시</h3>
-    <h3 class="OsanIcon"></h3>
-    <h3 class="OsanNowtemp">현재기온:</h3>
-    <h3 class="OsanLowtemp">최저기온:</h3>
-    <h3 class="OsanHightemp">최대기온:</h3>
+<!--    <h3>오산시</h3>-->
+<!--    <h3 class="OsanIcon"></h3>-->
+<!--    <h3 class="OsanNowtemp">현재기온:</h3>-->
+<!--    <h3 class="OsanLowtemp">최저기온:</h3>-->
+<!--    <h3 class="OsanHightemp">최대기온:</h3>-->
+<!--    <script src="/js/weather.js"></script>-->
+
+    <div class="col-6">
+        <style>
+             .col-6{
+                 display: inline-block
+                 border:5px outset
+
+             }
+
+        </style>
+        <div class="card">
+        <div class="card-header"></div>
+                <div class="card-body">
+                    <h4 class="flex-grow-1">오산시</h4>
+                    <span class="nowtime"></span>
+
+
+                    <div class="d-flex flex-column temp mt-5 mb-3">
+                        <h2 class="OsanNowtemp">현재기온:</h2>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="temp-details flex-grow-1">
+
+                            <p class="my-1">
+
+                                <span>최저기온:</span>
+                                <span class="OsanLowtemp"></span>
+                            </p>
+
+                            <p class="my-1">
+
+                                <span>최대기온:</span>
+                                <span class="OsanHightemp"></span>
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="OsanIcon" style="width:700px;height:700px"></h3>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
     <script src="/js/weather.js"></script>
+
+
+<!--<div class="card">-->
+
+<!--    <h2>오산시</h2>-->
+<!--    <h3 class="nowtime"></h3>-->
+<!--    <h1>23°</h1>-->
+<!--    <div class="sky">-->
+<!--        <div class="sun"></div>-->
+<!--        <div class="cloud">-->
+<!--            <div class="circle-small"></div>-->
+<!--            <div class="circle-tall"></div>-->
+<!--            <div class="circle-medium"></div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+
 
 
 

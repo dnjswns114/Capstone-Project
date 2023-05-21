@@ -1,87 +1,156 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>My Website</title>-->
+<!--    -->
+<!--&lt;!&ndash;    <style>&ndash;&gt;-->
+<!--&lt;!&ndash;        /* CSS styles for the navigation bar */&ndash;&gt;-->
+<!--&lt;!&ndash;        nav {&ndash;&gt;-->
+<!--&lt;!&ndash;            background-color: #333;&ndash;&gt;-->
+<!--&lt;!&ndash;            color: #fff;&ndash;&gt;-->
+<!--&lt;!&ndash;            display: flex;&ndash;&gt;-->
+<!--&lt;!&ndash;            justify-content: space-between;&ndash;&gt;-->
+<!--&lt;!&ndash;            align-items: center;&ndash;&gt;-->
+<!--&lt;!&ndash;            padding: 10px;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        nav ul {&ndash;&gt;-->
+<!--&lt;!&ndash;            list-style: none;&ndash;&gt;-->
+<!--&lt;!&ndash;            margin: 0;&ndash;&gt;-->
+<!--&lt;!&ndash;            padding: 0;&ndash;&gt;-->
+<!--&lt;!&ndash;            display: flex;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        nav ul li {&ndash;&gt;-->
+<!--&lt;!&ndash;            margin-right: 10px;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        nav ul li a {&ndash;&gt;-->
+<!--&lt;!&ndash;            color: #fff;&ndash;&gt;-->
+<!--&lt;!&ndash;            text-decoration: none;&ndash;&gt;-->
+<!--&lt;!&ndash;            padding: 10px;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        nav ul li a:hover {&ndash;&gt;-->
+<!--&lt;!&ndash;            background-color: #555;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        /* CSS styles for the content */&ndash;&gt;-->
+<!--&lt;!&ndash;        main {&ndash;&gt;-->
+<!--&lt;!&ndash;            padding: 20px;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        section {&ndash;&gt;-->
+<!--&lt;!&ndash;            display: none;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        section.active {&ndash;&gt;-->
+<!--&lt;!&ndash;            display: block;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;    </style>&ndash;&gt;-->
+<!--</head>-->
+<!--<body>-->
+<!--<header>-->
+<!--    <a th:href="@{/main}">-->
+<!--        <img src="img/mainlogo.png" width="200", height ="100">-->
+<!--    </a>-->
+<!--    <h1>나만의 건강 비서 웹서비스</h1>-->
+<!--    <nav>-->
+<!--        <ul>-->
+<!--            <li><a th:href="@{/weather}">날씨</a></li>-->
+<!--            <li><a th:href="@{/calendar}">스케줄</a></li>-->
+<!--            <li><a th:href="@{/memo}">메모</a></li>-->
+<!--            <li><a th:href="@{/notice}">공지사항</a></li>-->
+<!--            <li><a th:href="@{/content}">자유게시판</a></li>-->
+<!--            <li><a th:href="@{/workoutResult}">운동성과</a></li>-->
+<!--            <li><a th:href="@{/chat}">채팅룸</a></li>-->
+<!--        </ul>-->
+<!--        &lt;!&ndash; add logo or other header content here &ndash;&gt;-->
+<!--    </nav>-->
+<!--</header>-->
+<!--</body>-->
+<!--</html>-->
+
+
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>My Website</title>
-    <style>
-        /* CSS styles for the navigation bar */
-        nav {
-            background-color: #333;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        nav ul li {
-            margin-right: 10px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-        }
-        nav ul li a:hover {
-            background-color: #555;
-        }
-        /* CSS styles for the content */
-        main {
-            padding: 20px;
-        }
-        section {
-            display: none;
-        }
-        section.active {
-            display: block;
-        }
-    </style>
-<!--    <script>-->
-<!--        // JavaScript function to open tabs-->
-<!--        function openTab(evt, tabName) {-->
-<!--            // Declare variables-->
-<!--            var i, section, link;-->
-
-<!--            // Get all elements with class="section" and hide them-->
-<!--            section = document.getElementsByClassName("section");-->
-<!--            for (i = 0; i < section.length; i++) {-->
-<!--                section[i].style.display = "none";-->
-<!--            }-->
-
-<!--            // Get all elements with class="link" and remove the class "active"-->
-<!--            link = document.getElementsByClassName("link");-->
-<!--            for (i = 0; i < link.length; i++) {-->
-<!--                link[i].className = link[i].className.replace(" active", "");-->
-<!--            }-->
-
-<!--            // Show the current tab, and add an "active" class to the button that opened the tab-->
-<!--            document.getElementById(tabName).style.display = "block";-->
-<!--            evt.currentTarget.className += " active";-->
-<!--        }-->
-<!--    </script>-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Scrolling Nav - 나만의 건강비서 웹 서비스</title>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/bootstrapmain.css" rel="stylesheet" />
 </head>
-<body>
-<header>
-    <a th:href="@{/main}">
-        <img src="img/mainlogo.png" width="200", height ="100">
-    </a>
-    <h1>나만의 건강 비서 웹서비스</h1>
-    <nav>
-        <ul>
-            <li><a th:href="@{/weather}">날씨</a></li>
-            <li><a th:href="@{/calendar}">스케줄</a></li>
-            <li><a th:href="@{/memo}">메모</a></li>
-            <li><a th:href="@{/notice}">공지사항</a></li>
-            <li><a th:href="@{/content}">자유게시판</a></li>
-            <li><a th:href="@{/workoutResult}">운동성과</a></li>
-            <li><a th:href="@{/chat}">채팅룸</a></li>
-        </ul>
-        <!-- add logo or other header content here -->
-    </nav>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container px-4">
+        <a class="navbar-brand" th:href="@{/main}">메인화면</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" th:href="@{/weather}">날씨</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/calendar}">스케줄</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/memo}">메모</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/notice}">공지사항</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/content}">자유게시판</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/workoutResult}">운동성과</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/chat}">채팅룸</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Header-->
+<header class="bg-primary bg-gradient text-white">
+    <div class="container px-4 text-center">
+        <h1 class="fw-bolder">나만의 건강비서 웹 서비스에 어서 오세요!</h1>
+        <p class="lead">우리 웹 사이트는 사용자의 건강관리를 돕기 위한 다양한 기능과 정보를 제공합니다. </p>
+    </div>
 </header>
+<!-- About section-->
+<section id="about">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>날씨기능</h2>
+                <p class="lead">실시간으로 날씨를 확인할 수 있는 API를 구현했습니다. 야외운동 가기 전 항상 날씨를 체크하세요!</p>
+<!--                <ul>-->
+<!--                    <li>Clickable nav links that smooth scroll to page sections</li>-->
+<!--                    <li>Responsive behavior when clicking nav links perfect for a one page website</li>-->
+<!--                    <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>-->
+<!--                    <li>Minimal custom CSS so you are free to explore your own unique design options</li>-->
+<!--                </ul>-->
+                <img src="/img/weather.PNG">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services section-->
+<section class="bg-light" id="services">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>자유게시판 기능</h2>
+                <p class="lead">자유게시판을 통해 정보를 공유하세요</p>
+                <img src="/img/board.PNG">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact section-->
+<section id="contact">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>메모 기능</h2>
+                <p class="lead">운동 목표와 식단등의 게획을 메모해보세요</p>
+                <img src="/img/memo.PNG">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
 </body>
 </html>
