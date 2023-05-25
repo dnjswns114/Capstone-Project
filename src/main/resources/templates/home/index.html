@@ -2,13 +2,100 @@
 <head>
     <meta charset="UTF-8">
     <title>Simple_member</title>
+    <!-- Font Awesome -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/mdb.dark.min.css" />
+    <link rel="stylesheet" href="css/mdb.dark.rtl.min.css" />
+    <link rel="stylesheet" href="css/mdb.rtl.min.css" />
 </head>
 <body>
-<h1>Simple_Login</h1>
-<h3 sec:authorize="isAuthenticated()">반갑습니다. <span sec:authentication="name"></span>님!</h3>
-<hr>
-<a sec:authorize="isAnonymous()" th:href="@{/member/login}">로그인</a>
-<a sec:authorize="isAuthenticated()" th:href="@{/member/logout}">로그아웃</a>
-<a sec:authorize="isAnonymous()" th:href="@{/member/signup}">회원가입</a>
+<!--<h1>Simple_Login</h1>-->
+<!--<h3 sec:authorize="isAuthenticated()">반갑습니다. <span sec:authentication="name"></span>님!</h3>-->
+<!--<hr>-->
+<!--<a sec:authorize="isAnonymous()" th:href="@{/member/login}">로그인</a>-->
+<!--<a sec:authorize="isAuthenticated()" th:href="@{/member/logout}">로그아웃</a>-->
+<!--<a sec:authorize="isAnonymous()" th:href="@{/member/signup}">회원가입</a>-->
+<div class="container min-vh-100 d-flex justify-content-center align-items-center">
+    <form>
+        <h3>나만의 건강비서 웹 서비스입니다. 어서오세요!</h3>
+
+<!--        &lt;!&ndash; Email input &ndash;&gt;-->
+<!--        <div class="form-outline mb-4">-->
+<!--            <input type="email" id="form2Example1" class="form-control" />-->
+<!--            <label class="form-label" for="form2Example1">아이디</label>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Password input &ndash;&gt;-->
+<!--        <div class="form-outline mb-4">-->
+<!--            <input type="password" id="form2Example2" class="form-control" />-->
+<!--            <label class="form-label" for="form2Example2">비밀번호</label>-->
+<!--        </div>-->
+
+
+<!--            &lt;!&ndash; 2 column grid layout for inline styling &ndash;&gt;-->
+<!--            <div class="row mb-4">-->
+<!--                <div class="col d-flex justify-content-center">-->
+<!--                    &lt;!&ndash; Checkbox &ndash;&gt;-->
+<!--                    <div class="form-check">-->
+<!--                        <input class="form-check-input" type="checkbox" value="" id="form2Example34" checked />-->
+<!--                        <label class="form-check-label" for="form2Example34"> Remember me </label>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="col">-->
+<!--                    &lt;!&ndash; Simple link &ndash;&gt;-->
+<!--                    <a href="#!">Forgot password?</a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+            <!-- Submit button -->
+<!--            <button class="btn btn-primary btn-block mb-4">로그인</button>-->
+<!--            th:onclick="|location.href='@{/main}'|"-->
+<!--            <a button type="button" sec:authorize="isAnonymous()" th:onclick="|location.href='@{/main}'|" class="btn btn-primary btn-block mb-4">로그인</a>-->
+
+            <h3 sec:authorize="isAuthenticated()">반갑습니다. <span sec:authentication="name"></span>님!</h3>
+            <hr>
+            <a sec:authorize="isAuthenticated()" th:href="@{/member/logout}">로그아웃</a>
+
+<!--            &lt;!&ndash; Register buttons &ndash;&gt;-->
+            <div class="text-center">
+                <p>로그인 하시겠습니까? <a sec:authorize="isAnonymous()" th:href="@{/member/login}">로그인</a></p>
+                <p>아이디가 없으신가요? <a sec:authorize="isAnonymous()" th:href="@{/member/signup}">회원가입</a></p>
+                <p>or sign up with:</p>
+                <button type="button" class="btn btn-secondary btn-floating mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+
+                <button type="button" class="btn btn-secondary btn-floating mx-1">
+                    <i class="fab fa-google"></i>
+                </button>
+
+                <button type="button" class="btn btn-secondary btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                </button>
+
+                <button type="button" class="btn btn-secondary btn-floating mx-1">
+                    <i class="fab fa-github"></i>
+                </button>
+            </div>
+    </form>
+</div>
+
+
+
+<!-- Pills content -->
+
+<!-- MDB -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
 </html>

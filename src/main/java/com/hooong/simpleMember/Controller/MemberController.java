@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @AllArgsConstructor
@@ -36,6 +38,11 @@ public class MemberController {
     public String login() {
         return "/member/loginForm";
     }
+
+//    @RequestMapping(value = "/member/login", method = {RequestMethod.GET, RequestMethod.POST})
+//    public String login() {
+//        return "/member/loginForm";
+//    }
 
 //    @GetMapping("/board")
 //    public String board() {

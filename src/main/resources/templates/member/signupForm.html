@@ -2,16 +2,49 @@
 <head>
     <meta charset="UTF-8">
     <title>SignUp</title>
+    <!-- Font Awesome -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"
+            rel="stylesheet"
+    />
 </head>
 <body>
-<h1>회원가입</h1>
-<hr>
-<form action="/member/signup" th:object="${member}" method="post">
-    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
 
-    <input type="text" th:field="*{username}" placeholder="아이디입력">
-    <input type="password" th:field="*{password}" placeholder="비밀번호">
-    <button type="submit">로그인</button>
-</form>
+<div class="container min-vh-100 d-flex justify-content-center align-items-center">
+    <form action="/member/signup" method="post">
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+        <h3>회원가입 하세요</h3>
+
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+            <input type="email" name="username" class="form-control" />
+            <label class="form-label" >아이디(이메일형식)</label>
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+            <input type="password" name="password" class="form-control" />
+            <label class="form-label" >비밀번호</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block mb-4">회원가입</button>
+    </form>
+</div>
+
+<!-- MDB -->
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"
+></script>
 </body>
 </html>
