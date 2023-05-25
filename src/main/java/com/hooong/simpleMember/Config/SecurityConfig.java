@@ -48,13 +48,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .failureUrl("/") //로그인 실패시 이동할 페이지
                 .permitAll()
                 .and()
-
+                .oauth2Login()
+                .loginPage("/member/login")
+                .defaultSuccessUrl("/main")
+                .permitAll()
+                .and()
             .logout()
                 .logoutRequestMatcher(new AntPathRequestMatcher("/member/logout"))
                 .logoutSuccessUrl("/")
                 .invalidateHttpSession(true)    // 세션 초기화
                 .and()
             .exceptionHandling();
+
+
 
     }
 

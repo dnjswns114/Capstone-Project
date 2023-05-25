@@ -72,21 +72,21 @@
                 <p>로그인 하시겠습니까? <a sec:authorize="isAnonymous()" th:href="@{/member/login}">로그인</a></p>
                 <p>아이디가 없으신가요? <a sec:authorize="isAnonymous()" th:href="@{/member/signup}">회원가입</a></p>
                 <p>or sign up with:</p>
-                <button type="button" class="btn btn-secondary btn-floating mx-1">
-                    <i class="fab fa-facebook-f"></i>
-                </button>
+<!--                <button type="button" class="btn btn-secondary btn-floating mx-1">-->
+<!--                    <i class="fab fa-facebook-f"></i>-->
+<!--                </button>-->
 
-                <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <button type="button" class="btn btn-secondary btn-floating mx-1" th:onclick="|location.href='@{/oauth2/authorization/google}'|">
                     <i class="fab fa-google"></i>
                 </button>
 
-                <button type="button" class="btn btn-secondary btn-floating mx-1">
-                    <i class="fab fa-twitter"></i>
-                </button>
+<!--                <button type="button" class="btn btn-secondary btn-floating mx-1">-->
+<!--                    <i class="fab fa-twitter"></i>-->
+<!--                </button>-->
 
-                <button type="button" class="btn btn-secondary btn-floating mx-1">
-                    <i class="fab fa-github"></i>
-                </button>
+<!--                <button type="button" class="btn btn-secondary btn-floating mx-1">-->
+<!--                    <i class="fab fa-github"></i>-->
+<!--                </button>-->
             </div>
     </form>
 </div>
