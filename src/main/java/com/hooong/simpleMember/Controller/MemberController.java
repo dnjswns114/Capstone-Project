@@ -59,10 +59,6 @@ public class MemberController {
         {return "/workoutResult/workoutResult";}
     }
 
-    @GetMapping("/chat")
-    public String chat() {
-        {return "/chat/chat";}
-    }
 
     @GetMapping("/weather")
     public String weather() {
@@ -83,5 +79,6 @@ public class MemberController {
     public String main() {
         {return "/main/main";}
     }
+
 
 }

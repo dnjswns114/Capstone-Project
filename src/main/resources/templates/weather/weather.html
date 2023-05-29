@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -9,7 +9,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+
+<!--    &lt;!&ndash; Core theme CSS (includes Bootstrap)&ndash;&gt;-->
+<!--    <link href="css/bootstrapmain.css" rel="stylesheet" />-->
+
     <link rel="stylesheet" href="/css/weather.css">
+
 
 </head>
 <body>
@@ -23,6 +28,29 @@
 <!--    <h3 class="OsanHightemp">최대기온:</h3>-->
 <!--    <script src="/js/weather.js"></script>-->
 
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">-->
+<!--    <div class="container px-4">-->
+<!--        <a class="navbar-brand" th:href="@{/main}">메인화면</a>-->
+<!--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>-->
+<!--        <div class="collapse navbar-collapse justify-content-between" id="navbarResponsive">-->
+<!--            <ul class="navbar-nav ms-auto">-->
+<!--                <li class="nav-item"><a class="nav-link" th:href="@{/weather}">날씨</a></li>-->
+<!--                <li class="nav-item"><a class="nav-link" th:href="@{/calendar}">스케줄</a></li>-->
+<!--                <li class="nav-item"><a class="nav-link" th:href="@{/memo}">메모</a></li>-->
+<!--                <li class="nav-item"><a class="nav-link" th:href="@{/notice}">공지사항</a></li>-->
+<!--                <li class="nav-item"><a class="nav-link" th:href="@{/content}">자유게시판</a></li>-->
+<!--                <li class="nav-item"><a class="nav-link" th:href="@{/workoutResult}">운동성과</a></li>-->
+<!--                <li class="nav-item"><a class="nav-link" th:href="@{/chat}">채팅룸</a></li>-->
+<!--            </ul>-->
+<!--            <ul class="navbar-nav ms-auto">-->
+<!--                <li class="nav-item"><a class="nav-link" style="color:whitesmoke" sec:authorize="isAuthenticated()">반갑습니다. <span sec:authentication="name"></span>님! </a></li>-->
+<!--                <li class="nav-item"><a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/member/logout}">로그아웃</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
+
+
     <div class="col-6">
         <style>
              .col-6{
@@ -33,6 +61,7 @@
 
         </style>
         <div class="card">
+
         <div class="card-header"></div>
                 <div class="card-body">
                     <h4 class="flex-grow-1">오산시</h4>
