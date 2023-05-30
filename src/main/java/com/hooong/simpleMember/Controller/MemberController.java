@@ -39,24 +39,9 @@ public class MemberController {
         return "/member/loginForm";
     }
 
-//    @RequestMapping(value = "/member/login", method = {RequestMethod.GET, RequestMethod.POST})
-//    public String login() {
-//        return "/member/loginForm";
-//    }
-
-//    @GetMapping("/board")
-//    public String board() {
-//        {return "/board/board";}
-//    }
-
     @GetMapping("/accouncement")
     public String accouncement() {
         {return "/accouncement/accouncement";}
-    }
-
-    @GetMapping("/workoutResult")
-    public String workoutResult() {
-        {return "/workoutResult/workoutResult";}
     }
 
 

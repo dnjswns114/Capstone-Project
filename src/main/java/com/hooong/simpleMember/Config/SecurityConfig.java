@@ -36,7 +36,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         //http.csrf().disable(); //이거 disalbe 하면 일반페이지 403에러 막아줌 but 안하면 로그인페이지 에러남
-        http.csrf().ignoringAntMatchers("/api/memos/**","/notice/**","/content/**"); //이걸로 원하는 페이지부분만 disable해줌
+        http.csrf().ignoringAntMatchers("/api/memos/**","/notice/**","/content/**","/workoutResult/**"); //이걸로 원하는 페이지부분만 disable해줌
         http.authorizeRequests()
                 .antMatchers("/**").permitAll()
 

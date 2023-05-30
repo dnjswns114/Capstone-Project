@@ -384,13 +384,101 @@
 </div>
 <div class="wrap">
     <div class="header">
-        <h2>메모 기능</h2>
+        <h2>운동성과 및 메모기능</h2>
         <p>
-            운동 계획을 메모하세요!!
+            운동성과를 기록하거나 운동 일정 등을 메모하세요!
         </p>
     </div>
+    <style type="text/css">
+        .tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
+        .tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:0px;color:#002b36;
+            font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:0px;color:#fdf6e3;
+            font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-baqh{text-align:center;vertical-align:top}
+        .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+    </style>
+    <table class="tg">
+        <thead>
+        <tr>
+            <th class="tg-amwm">점수(points)</th>
+            <th class="tg-amwm">10</th>
+            <th class="tg-amwm">8</th>
+            <th class="tg-amwm">6</th>
+            <th class="tg-amwm">4</th>
+            <th class="tg-amwm">0</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="tg-amwm">수면시간</td>
+            <td class="tg-baqh">7~8</td>
+            <td class="tg-baqh">6:30~7,8~8:30</td>
+            <td class="tg-baqh">6~6:30,8:30~9</td>
+            <td class="tg-baqh">5:30~6,9~9:30</td>
+            <td class="tg-baqh">나머지</td>
+        </tr>
+        <tr>
+            <td class="tg-amwm">주당 운동 횟수</td>
+            <td class="tg-baqh">4~5</td>
+            <td class="tg-baqh">3~4</td>
+            <td class="tg-baqh">2~3</td>
+            <td class="tg-baqh">1~2</td>
+            <td class="tg-baqh">0</td>
+        </tr>
+        <tr>
+            <td class="tg-amwm">권장 단백질량(kg당)</td>
+            <td class="tg-baqh">0.8~1</td>
+            <td class="tg-baqh">0.6~0.8</td>
+            <td class="tg-baqh">0.4~0.6</td>
+            <td class="tg-baqh">0.2~0.4</td>
+            <td class="tg-baqh">나머지</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr><style type="text/css">
+    .tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
+    .tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:0px;color:#002b36;
+        font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:0px;color:#fdf6e3;
+        font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+    .tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+    <table class="tg">
+        <thead>
+        <tr>
+            <th class="tg-1wig">점수</th>
+            <th class="tg-1wig">30</th>
+            <th class="tg-1wig">28</th>
+            <th class="tg-1wig">26</th>
+            <th class="tg-1wig">24</th>
+            <th class="tg-1wig">20~23</th>
+            <th class="tg-1wig">17~20</th>
+            <th class="tg-1wig">10~15</th>
+            <th class="tg-1wig">나머지</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="tg-1wig">티어</td>
+            <td class="tg-0lax">챌린저</td>
+            <td class="tg-0lax">그랜드마스터</td>
+            <td class="tg-0lax">마스터</td>
+            <td class="tg-0lax">다이아</td>
+            <td class="tg-0lax">플레티넘</td>
+            <td class="tg-0lax">골드</td>
+            <td class="tg-0lax">실버</td>
+            <td class="tg-0lax">브론즈</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    <img src="/img/tier.jpg">
+    <hr>
+
     <div class="area-write">
-        <textarea class="field" placeholder="오늘의운동,식단 계획은 무엇인가요?" name="contents" id="contents" cols="30" rows="10"></textarea>
+        <textarea class="field" placeholder="오늘의운동,식단 계획은 무엇인가요?, 당신의 이번주 포인트 및 티어는 무엇인가요?" name="contents" id="contents" cols="30" rows="10"></textarea>
         <img src="img/send.png" alt="" onclick="writePost()">
     </div>
     <div id="cards-box" class="area-read">
