@@ -26,45 +26,6 @@
 
       <br>
 
-- ### 프로젝트 구조
-
-  ```
-  java
-  └── main
-      └── com
-          └── hooong
-              └── simpleMember
-                  ├── Config
-                  │   └── SecurityConfig.class
-                  ├── Controller
-                  │   └── MemberController.class
-  				        ├── Domain
-                  │   ├── Member$MemberBuilder.class
-                  │   └── Member.class
-                  ├── Dto
-                  │   ├── MemberDto$MemberDtoBuilder.class
-                  │   └── MemberDto.class
-                  ├── Repository
-                  │   └── MemberRepository.class
-                  ├── Service
-                  │   ├── MemberService.class
-                  │   └── Role.class
-                  └── SimpleMemberApplication.class
-  resources
-  └── main
-  		├── application.yml
-  		├── static
-  		└── templates
-   		├── home
-  		│   └── index.html
-  		└── member
-   			 	├── loginForm.html
-  				└── signupForm.html
-  ```
-
-  <br>
-
-<br>
 
 - ### Spring Security Config
 
